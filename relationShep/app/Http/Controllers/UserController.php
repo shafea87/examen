@@ -14,7 +14,7 @@ class UserController extends Controller
         $phone->phone = '35342642';
         $user = new User();
         $user->name = 'Tom';
-        $user->email = 'tom@ss.com';
+        $user->email = 'toms';
         $user->password = encrypt('secret');
         $user->save();
         $user->phone()->save($phone);

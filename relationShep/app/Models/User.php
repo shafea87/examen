@@ -42,6 +42,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     public function phone(){
-        return $this->hasone('App/Models/Phone');
+        return $this->hasOne('App/Models/Phone');
     }
 }
